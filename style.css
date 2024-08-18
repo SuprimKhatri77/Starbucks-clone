@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3% 10px 2%;
+  gap: 50px;
+  width: 100vw;
+}
+
+.left-side nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.left-side nav ul li a:visited,
+.right-side nav ul li a:visited {
+  color: black;
+}
+
+.right-side nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.location-icon {
+  font-size: 20px;
+  margin-right: 120px;
+  position: relative;
+}
+
+.location-icon::after {
+  content: "Find a store";
+  position: absolute;
+  top: 2px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  left: 25px;
+}
+
+.btn {
+  border: 1.1px solid black;
+  padding: 5px 15px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.sign-in-btn {
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.join-btn {
+  color: white !important;
+  font-size: 14px;
+  background-color: black;
+  font-weight: 550;
+  padding: 6px 16px;
+  position: relative;
+}
+
+.join-btn::after {
+  content: "";
+  background-color: red;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+
+.join-btn:hover:after {
+  width: 100%;
+  background-color: #f3f1e74b;
+}
+
+.left-side nav ul li a,
+.right-side nav ul li a {
+  transition: 0.2 ease-in;
+}
+
+.left-side nav ul li a:hover,
+.right-side nav ul li a:hover {
+  color: #008248;
+}
+
+.sign-in-btn:hover {
+  color: black !important;
+  background-color: #f3f1e7;
+}
+
+/* below header */
+.below-header {
+  background-color: #1e3932;
+  color: white;
+}
+
+.starbucks-rewards {
+  font-weight: 700;
+  padding-block: 10px;
+  /* background-color: red; */
+  width: 74%;
+  letter-spacing: 2px;
+  margin: auto;
+  font-size: 14.5px;
+  text-transform: uppercase;
+}
+
+/* hero section */
+.hero-section{
+  width: 100vw;
+  min-height: 100vh;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15% 4%;
+  width: 100vw;
+  /* width: 100%;
+  height: 100vh; */
+  background-image: url("images/bg.webp");
+  background-size: cover;
+  background-position: center left 50%;
+  background-color: rgb(212, 233, 226);
+  background-repeat: no-repeat;
+}
+
+.hero-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.below-hero-heading {
+  margin: 15px 0 15px 0;
+  font-size: 18px;
+  /* font-weight: 415; */
+}
+
+.join-now-btn {
+  display: inline-block;
+  background-color: #008248;
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.join-app-link {
+  font-size: 18px;
+}
+
+.join-app-link > a:visited {
+  color: black;
+}
+
+.join-app-link > a {
+  text-decoration: underline;
+}
+
+.join-app-link > a:hover {
+  text-decoration: none;
+}
+
+/* getting started section */
+.getting-started {
+  margin-block: 150px;
+}
+
+.getting-started > h2,
+.getting-started > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.getting-started > p {
+  margin-bottom: 70px;
+}
+
+.ways-to-get-started {
+  display: grid;
+  /* background-color: red; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+.way-1 {
+  border: 1.5px solid #008248;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #008248;
+  margin-bottom: 30px;
+}
+
+.way-2 {
+  padding: 7px 20px;
+}
+
+.way-3 {
+  padding: 7px 18px;
+}
+
+.way-heading {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.way-desc {
+  color: #1e3932;
+}
+
+.way-links:visited {
+  color: #008248;
+}
+
+.way-links {
+  text-decoration: underline;
+}
+
+.way-links:hover {
+  text-decoration: none;
+}
+
+/* free coffee section */
+.favorite-free {
+  background-color: #f1f8f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px;
+  width: 100vw;
+}
+
+.favorite-free > h2 {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.favorite-free nav ul {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.favorite-free nav ul li::after {
+  content: "⭐";
+  font-size: 15px;
+}
+
+.coffee-img-desc {
+  background-color: #d4e9e2;
+  width: 100%;
+}
+
+.favorite-free .coffee-img-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.drink-heading {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.coffee-desc > p {
+  /* background-color: red; */
+  max-width: 340px;
+}
+
+/* endless section */
+.endless-desc {
+  /* background-color: red; */
+  max-width: 49.5vw;
+  margin: auto;
+}
+
+.img1 {
+  border: none;
+}
+
+.img-desc {
+  /* background-color: green; */
+  max-width: 350px;
+  padding-bottom: 20px;
+}
+
+.endless > h2 {
+  font-weight: 550;
+  font-size: 1.7rem;
+}
+
+/* payment section */
+.payment-section {
+  background-color: #f3f1e7;
+  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-heading {
+  font-weight: 550;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pay-head-desc {
+  /* background-color: blue; */
+  max-width: 50vw;
+  margin: auto;
+  text-align: center;
+}
+
+.payment-methods-grid {
+  margin-top: 50px;
+  /* text-align: center; */
+  display: grid;
+  grid-template-columns: 200px 430px 490px;
+  /* background-color: red; */
+  margin-left: 4%;
+}
+
+.pay-meth-head {
+  /* background-color: red; */
+  max-width: 200px;
+}
+
+.pay-img {
+  display: flex;
+  gap: 15px;
+}
+
+.pay-img-desc {
+  /* background-color: yellow; */
+  /* max-width:40%; */
+  display: flex;
+  max-width: 48%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.separation-line {
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.302);
+  width: 90%;
+  margin: auto;
+}
+
+/* rewards section */
+.rewards-section {
+  height: 100vh;
+  /* width: 95vw; */
+  background-image: url("images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.rewards {
+  background-color: #d4e9e2;
+  height: 90vh;
+  width: 95vw;
+  padding: 5% 4.5%;
+}
+
+.rewards > h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.rewards > p {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.rewards-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  text-align: center;
+}
+
+.rewards-anchor-link:visited {
+  color: #008248;
+}
+
+.join-starbuck {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.rewards-starbuck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* footer */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-inline: 3%;
+}
+
+.footer-grid ul li {
+  padding-top: 20px;
+}
+
+.footer-grid h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.footer-grid ul li a:visited {
+  color: rgba(141, 137, 137, 0.684);
+}
+
+.footer-grid ul li a:hover {
+  color: black;
+}
+
+.footer-separation {
+  margin-block: 30px;
+  width: 95%;
+}
+
+/* sub footer */
+.sub-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  gap: 30px;
+}
+
+.social-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.terms-conditions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sub-footer ul li a:visited {
+  color: #1e3932;
+}
+
+.terms-conditions ul li a:hover {
+  text-decoration: underline;
+}
+
+.sub-footer p {
+  color: rgb(89, 88, 88);
+}
+/* responsive */
+.menu-icon {
+  display:none;
+
+  /* gap:90vw; */
+  font-size: 2rem;
+}
+.below-header,
+.favorite-free,
+.payment-section,
+.rewards-section {
+  width: 100%;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 10% 4%;
+  }
+  
+  .ways-to-get-started,
+  .payment-methods-grid,
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+ @media (max-width:870px){
+  .menu-icon{
+    display:flex ;
+  }
+
+  .nav-links{
+    display: none;
+  }
+ }
+
+ @media (max-width:370px){
+  header{
+    gap:5px;
+    justify-content: space-evenly;
+  }
+ }
+ @media (max-width:770px){
+  .rewards-link{
+    grid-template-columns: 1fr;
+  }
+ }
